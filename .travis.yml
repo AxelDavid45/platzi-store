@@ -9,9 +9,16 @@ node_js:
 
 git:
    depth: 3
-
 script:
    - yarn build
+
+notifications:
+   email:
+      recipients:
+         - me@axelespinosadev.com
+         - axeldavid45@gmail.com
+      on_success: always
+      on_failure: always
 
 deploy:
    provider: pages
